@@ -23,5 +23,3 @@ jacocoReportSettings := JacocoReportSettings()
   .withFormats(JacocoReportFormats.HTML)
 
 enablePlugins(JavaAppPackaging)
-
-
