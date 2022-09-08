@@ -20,6 +20,7 @@ jacocoReportSettings := JacocoReportSettings()
       line = 90,
       clazz = 100)
   )
+  .withFormats(JacocoReportFormats.HTML)
 
 enablePlugins(JavaAppPackaging)
 
