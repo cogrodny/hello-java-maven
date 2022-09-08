@@ -9,7 +9,7 @@ one because of a defect in the SUT (system under test), and one because of an er
 * Experience with Git source code management
 * Building with SBT
 * Automated unit testing with JUnit
-* Continuous integration with Travis
+* Continuous integration with GitHub Actions
 
 # System requirements
 
