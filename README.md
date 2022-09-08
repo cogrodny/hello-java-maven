@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/LoyolaChicagoCode/hello-java-sbt.svg?branch=master)](https://travis-ci.org/LoyolaChicagoCode/hello-java-sbt)
+[![Java sbt CI](https://github.com/lucformalmethodscourse/hello-java-sbt/actions/workflows/java-sbt.yml/badge.svg)](https://github.com/lucformalmethodscourse/hello-java-sbt/actions/workflows/java-sbt.yml)
 
 This build will always fail because it has 2 examples of failing tests:
 one because of a defect in the SUT (system under test), and one because of an error in the test itself.
 
-# Learning Objectives
+# Learning objectives
 
 * Simple hello world example
 * Experience with Git source code management
@@ -13,42 +13,45 @@ one because of a defect in the SUT (system under test), and one because of an er
 
 # System requirements
 
-* Java 8 SDK or later
+* Java 11 SDK or later (Java 17 LTS release recommended)
 * [SBT](https://www.scala-sbt.org/1.x/docs/Setup.html)
 
-# Running the Application
+# Running the application
 
-On Linux or Mac OS X:
+Without command-line arguments:
 
     $ sbt run
 
-or
+With specific command-line arguments:
 
-    $ sbt 'run arg1 arg2 arg3'
+    $ sbt "run arg1 arg2 arg3"
 	
-On Windows:
-	
-    > sbt run
-
-or
-
-    > sbt "run arg1 arg2 arg3"
-
-# Running the Tests
-
-On Linux or Mac OS X:
+# Running the tests
 
     $ sbt test
 	
-On Windows:
-	
-    > sbt test
+# Generating the test coverage reports
 
-# Running the Application Outside SBT
+    $ sbt jacocoReport
+	
+You can then view the report in a web browser.
+
+On macOS:
+
+    $ open target/scala-2.12/jacoco/report/html/index.html
+
+On Linux:
+
+    $ xdg-open target/scala-2.12/jacoco/report/html/index.html
+
+On Windows: please let me know if you know how to do this from the WSL
+command line. Otherwise you can open the index file in your web browser.
+
+# Running the application outside SBT
 
 This allows passing command-line arguments directly:
 
-On Linux or Mac OS X:
+On Linux or macOS:
 
     $ sbt stage
     $ ./target/universal/stage/bin/hello-java arg1 arg2 arg3
