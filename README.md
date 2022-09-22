@@ -47,7 +47,7 @@ On Linux:
 On Windows: please let me know if you know how to do this from the WSL
 command line. Otherwise you can open the index file in your web browser.
 
-*Note that the report will show 0% as long as there are failing tests.*
+*Note that the report will show 0% coverage as long as there are failing tests.*
 
 # Running the application outside SBT
 
