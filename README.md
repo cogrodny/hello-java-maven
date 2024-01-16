@@ -13,7 +13,7 @@ one because of a defect in the SUT (system under test), and one because of an er
 
 # System requirements
 
-* Java 11 SDK or later (Java 17 LTS release recommended)
+* Java 17 SDK or later (Java 17 LTS release recommended)
 * [SBT](https://www.scala-sbt.org/1.x/docs/Setup.html)
 
 # Running the application
