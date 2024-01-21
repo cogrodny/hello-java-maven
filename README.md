@@ -32,9 +32,16 @@ With specific command-line arguments:
 	
 # Generating the test coverage reports
 
-    $ sbt jacocoReport
+    $ sbt jacoco
 	
-You can then view the report in a web browser.
+You will then see the coverage report on the console. 
+In addition, you can view a formatted HTML version of report in a web browser.
+
+In Gitpod, navigate to and open
+
+    target/scala-2.13/jacoco/report/html/index.html
+    
+then press the "show preview" button in the top right corner.
 
 On macOS:
 
