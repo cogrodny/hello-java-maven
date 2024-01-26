@@ -34,22 +34,26 @@ With specific command-line arguments:
 
     $ sbt jacoco
 	
-You will then see the coverage report on the console. 
+If the tests pass, you will then see the coverage report on the console. 
 In addition, you can view a formatted HTML version of report in a web browser.
+
+If the tests don't pass, however, you should force the generation of the test coverage report:
+
+    $ sbt jacocoReport
 
 In Gitpod, navigate to and open
 
-    target/scala-2.13/jacoco/report/html/index.html
+    target/scala-2.12/jacoco/report/html/index.html
     
 then press the "show preview" button in the top right corner.
 
 On macOS:
 
-    $ open target/scala-2.13/jacoco/report/html/index.html
+    $ open target/scala-2.12/jacoco/report/html/index.html
 
 On Linux:
 
-    $ xdg-open target/scala-2.13/jacoco/report/html/index.html
+    $ xdg-open target/scala-2.12/jacoco/report/html/index.html
 
 On Windows: please let me know if you know how to do this from the WSL
 command line. Otherwise you can open the index file in your web browser.
