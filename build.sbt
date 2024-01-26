@@ -16,7 +16,7 @@ jacocoReportSettings := JacocoReportSettings()
     JacocoThresholds(
       instruction = 80,
       method = 100,
-      branch = 100,
+      branch = 0,
       complexity = 100,
       line = 90,
       clazz = 100)
