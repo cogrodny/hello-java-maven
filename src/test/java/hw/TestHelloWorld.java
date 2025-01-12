@@ -2,6 +2,8 @@ package hw;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -28,8 +30,8 @@ public class TestHelloWorld {
 
   @Test
   public void getMessage2() { // this test is broken - fix it!
-    assertNull(fixture);
-    assertEquals("hello world", fixture.getMessage());
+    final var instance = List.of(fixture).get(1);
+    assertEquals("hello world", instance.getMessage());
   }
 
   @Test
