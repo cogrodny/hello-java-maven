@@ -66,7 +66,7 @@ command line. Otherwise you can open the index file in your web browser.
 
 First, create the JAR file containing the class files for this project:
 
-    $ mvn package -D
+    $ mvn package -DskipTests
 
 This allows passing command-line arguments directly.
 
