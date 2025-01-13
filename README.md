@@ -3,7 +3,7 @@
 This build will always fail because it has 2 examples of failing tests:
 one because of a defect in the SUT (system under test), and one because of an error in the test itself.
 
-# Learning objectives
+## Learning objectives
 
 * Simple hello world example
 * Experience with Git source code management
@@ -11,14 +11,14 @@ one because of a defect in the SUT (system under test), and one because of an er
 * Automated unit testing with JUnit
 * Continuous integration with GitHub Actions
 
-# System requirements
+## System requirements
 
 * Java 21 SDK or later (Java 21 LTS release recommended)
 * [Maven](https://maven.apache.org/)
 
 Both of these can be installed conveniently using [SDKMAN!](https://sdkman.io/).
 
-# Running the application
+## Running the application
 
 Without command-line arguments:
 
@@ -28,11 +28,11 @@ With specific command-line arguments:
 
     $ mvn exec:java -Dexec.args="arg1 arg2 arg3"
 	
-# Running the tests
+## Running the tests
 
     $ mvn test
 	
-# Generating the test coverage reports
+## Generating the test coverage reports
 
     $ mvn verify
 	
@@ -62,7 +62,7 @@ command line. Otherwise you can open the index file in your web browser.
 
 *Note that the report will show 0% coverage as long as there are failing tests.*
 
-# Running the application outside Maven
+## Running the application outside Maven
 
 First, create the JAR file containing the class files for this project:
 
