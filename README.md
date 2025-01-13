@@ -16,38 +16,45 @@ one because of a defect in the SUT (system under test), and one because of an er
 * Java 21 SDK or later (Java 21 LTS release recommended)
 * [Maven](https://maven.apache.org/)
 
-Both of these can be installed conveniently using [SDKMAN!](https://sdkman.io/).
+Your Codespace for this repo will already include these tools.
+
+When working on a local workstation, you can conveniently install them using [SDKMAN!](https://sdkman.io/).
 
 ## Running the application
 
 Without command-line arguments:
 
+    $ mvn compile exec:java
+
+Once compiled, you can omit the compile goal from subsequent executions, but remember to recompile after every code change:
+
     $ mvn exec:java
 
-With specific command-line arguments:
+You can also run the application with specific command-line arguments:
 
     $ mvn exec:java -Dexec.args="arg1 arg2 arg3"
 	
 ## Running the tests
 
+To compile and run the tests:
+
     $ mvn test
 	
-## Generating the test coverage reports
+## Generating the test coverage report
 
-    $ mvn verify
-	
-If the tests pass, you will then see the coverage report on the console. 
-In addition, you can view a formatted HTML version of report in a web browser.
-
-If the tests don't pass, however, you should force the generation of the test coverage report:
+After running the tests, you can generate a coverage report:
 
     $ mvn jacoco:report
 
-In Gitpod, navigate to and open
+You can view the formatted HTML version of the report.
+In your Codespace or other VS Code instance, locate
 
     target/site/jacoco/index.html
     
-then press the "show preview" button in the top right corner.
+then right-click and choose "show preview" from the context menu.
+(This requires the Live Preview extension for VS Code to be installed.)
+
+You can also open the report locally through a web browser or on the command line.
 
 On macOS:
 
@@ -58,9 +65,8 @@ On Linux:
     $ xdg-open target/site/jacoco/index.html
 
 On Windows: please let me know if you know how to do this from the WSL
-command line. Otherwise you can open the index file in your web browser.
-
-*Note that the report will show 0% coverage as long as there are failing tests.*
+command line.
+Otherwise you can open the index file in your web browser or VS Code.
 
 ## Running the application outside Maven
 
