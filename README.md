@@ -1,4 +1,4 @@
-[![Java CI with Maven](https://github.com/lucformalmethodscourse/hello-java-sbt/actions/workflows/maven.yml/badge.svg)](https://github.com/lucformalmethodscourse/hello-java-sbt/actions/workflows/maven.yml)
+[![Java CI with Maven](https://github.com/lucformalmethodscourse/hello-java-maven/actions/workflows/maven.yml/badge.svg)](https://github.com/lucformalmethodscourse/hello-java-maven/actions/workflows/maven.yml)
 
 This build will always fail because it has 2 examples of failing tests:
 one because of a defect in the SUT (system under test), and one because of an error in the test itself.
