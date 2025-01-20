@@ -30,7 +30,7 @@ public class TestHelloWorld {
 
   @Test
   public void getMessage2() { // this test is broken - fix it!
-    final var instance = List.of(fixture).get(1);
+    final var instance = List.of(fixture).get(0);
     assertEquals("hello world", instance.getMessage());
   }
 
